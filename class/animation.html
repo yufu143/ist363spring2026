@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 2 CSS Animation</title>
     <style>
+        /*
         button {
             border-radius: 50%;
             background-color: orange;
@@ -20,9 +21,38 @@
             background-color: rgb(188, 13, 164);
             transform: rotate(360deg);
         }
+        */
+        
+        nav {
+            display: flex;
+        }
+
+        nav div {
+            background-color: black;
+            margin: 2px;
+            color: white;
+            padding: 15px;
+            font-family: arial, sans-serif;
+            transition: 0.5s;
+        }
+
+        nav div:hover {
+            background-color: gray;
+            transform: scale(1.25);
+        }
+
+
     </style>
 </head>
 <body>
+    <nav>
+        <div>About</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+      
+    <!---
     <button>Go Orange!</button>
+    --> 
 </body>
 </html>
