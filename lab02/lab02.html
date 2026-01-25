@@ -31,6 +31,7 @@
             }
 
             .info {
+                position: absolute;
                 display: flex;
                 flex-wrap: wrap;
                 width: 75%;
@@ -41,6 +42,7 @@
             }
 
             .images {
+                position: absolute;
                 display: flex;
                 flex-wrap: wrap;                
                 width: 75%;
@@ -72,7 +74,6 @@
 
         #name {
             position: absolute;
-            height: 200px;
             animation-name: move;
             animation-duration: 5s;
             animation-timing-function: linear;
@@ -80,8 +81,10 @@
         }
 
         @keyframes move {
-            0% {transform: translateY(-200px);}
-            50% {transform: translateY(300px);}
+            0% {top: -200px;}
+            25% {transform: translateY(-200px);}
+            50% {transform: rotateY(180deg);}
+            75% {transform: rotateY(-180deg);}
             100% {transform: scale(2);}
         }
 
