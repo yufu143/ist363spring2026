@@ -55,20 +55,33 @@
                     a.	Your name should slide down from the top of the browser window.
                     b.	Then flip it around 
                     c.	Then make it pulse larger.
-            */
+            
 
             #name {
-                position: -200px;
-                height: 100px;
+                position: absolute;
                 animation-name: move;
                 animation-duration: 5s;
             }
 
             @keyframes move {
-                0% {transform: translateY(20px);}
+                0% {transform: translateY(-100px);}
+                25% {transform: ;}
                 100% {transform: scale(2);}
             }
-            
+            */
+
+        .name::after {
+            position: absolute;
+            height: 1000px;
+            animation-name: move;
+            animation-duration: 7s;
+            transform: scale(2);
+        }
+        @keyframes move {
+            0% {transform: translateY(-200px)}
+            100% {transform: translateY(300px);}
+        }
+
         </style>
         <!--- <link rel="stylesheet" href="styles.css"> --->
     </head>
