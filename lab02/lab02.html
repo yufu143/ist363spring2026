@@ -57,36 +57,22 @@
                     c.	Then make it pulse larger.
             */
         
-            .name {
+            #name {
                 position: absolute;
-                height: 1000px;
+                height: 200px;
                 animation-name: move;
-                animation-duration: 7s;
-                transform: scale(2);
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                transition: 2s;
             }
 
             @keyframes move {
-                0% {transform: translateY(-200px);}
-                100% {transform: translateY(100px);}
+                0% {top: -200px;}
+                25% {transform: translateY(-200px);}
+                50% {transform: rotateY(180deg);}
+                75% {transform: rotateY(-180deg);}
+                100% {transform: scale(2);}
             }
-        
-            /*
-        #name {
-            position: absolute;
-            animation-name: move;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            transition: 2s;
-        }
-
-        @keyframes move {
-            0% {top: -200px;}
-            25% {transform: translateY(-200px);}
-            50% {transform: rotateY(180deg);}
-            75% {transform: rotateY(-180deg);}
-            100% {transform: scale(2);}
-        }
-        */
 
         </style>
         <!--- <link rel="stylesheet" href="styles.css"> --->
