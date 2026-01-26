@@ -40,6 +40,10 @@
                 justify-content: center;       
             }
 
+            div p {
+                position: relative;
+            }
+
             .images {
                 display: flex;
                 flex-wrap: wrap;                
@@ -58,19 +62,15 @@
             */
         
             .name {
-                position: relative;
-                top: -200px;
-                animation-name: move;
-                animation-duration: 5s;
-                animation-timing-function: linear;
+                position: absolute;
+                animation: move 7s linear;
                 transition: 2s;
             }
 
             @keyframes move {
-                25% {transform: translateY(200px);}
+                0% {top: -200px;}
                 50% {transform: rotateY(180deg);}
-                75% {transform: rotateY(-180deg);}
-                100% {transform: scale(2);}
+                100% {transform: scale(2);}               
             }
 
         </style>
