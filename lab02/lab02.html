@@ -62,14 +62,15 @@
             */
         
             .name {
-                position: absolute;
+                position: relative;
                 animation: move 7s linear;
                 transition: 2s;
             }
 
             @keyframes move {
-                0% {top: -200px;}
-                50% {transform: rotateY(180deg);}
+                0% {translate: -200px;}
+                25% {transform: rotateY(180deg);}
+                50% {transform: rotateY(-180deg);}
                 100% {transform: scale(2);}               
             }
 

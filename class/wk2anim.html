@@ -40,6 +40,66 @@
         }
         */
 
+
+        body {
+        font-family: Arial;
+        margin: 20px;
+        }
+
+        button {
+        display: flex;
+        font-size: 15px;
+        justify-content: space-evenly;
+        padding: 15px 25px;
+        position: relative;
+        border: solid #FCBD00 0.15em;
+        border-radius: 1.1em;
+        color: #FCBD00;
+        background-color: #FFFFFF;
+        transition: 0.25s;
+        }
+
+        button:hover {
+        color: #FFFFFF;
+        transform: scale(1.1);
+        /*padding: 25px 35px;*/
+        background-color: #FCBD00;
+        transition: 0.25s;
+        }
+
+        button:focus {
+        color: #FFFFFF;
+        transform: scale(1.1);
+        /*padding: 25px 35px;*/
+        background-color: #FCBD00;
+        }
+
+        /*
+        .box:hover::before {
+        content: '\2713';
+        margin-right: 5px;
+        }
+
+        /*
+        .check {
+        height: 15px; 
+        width: 5px; 
+        border-bottom: 5px solid orange; 
+        border-right: 5px solid orange; 
+        transform: rotate(45deg);
+        margin-right: 15px;
+        }
+        /*
+        .box:before { 
+        height: 15px; 
+        width: 5px; 
+        border-bottom: 5px solid orange; 
+        border-right: 5px solid orange; 
+        transform: rotate(45deg);
+        margin-right: 15px;
+        }
+        */
+
         nav {
             display: flex;
         }
@@ -67,6 +127,11 @@
         <div>Products</div>
         <div>Contact</div>
     </nav>
+
+    <button class="box">
+        <div class="check"></div>
+        <div class="text">Submit</div>
+    </button>
     
     <!-- for pulse animation
         <button>
