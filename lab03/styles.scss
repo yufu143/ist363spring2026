@@ -1,11 +1,18 @@
-/*
+@import './partials/reset';
+@import './partials/variables';
+@import './partials/mixin';
+
+
 header {
     background-color: $orange;
-    color: white;
+    
+    a {
+        color: white;
+    }
 }
 
 nav {
     background-color: $orange;
     color: white;
 }
-*/
+
