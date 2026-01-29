@@ -58,7 +58,11 @@ nav {
 
 .aboutbox {
     
-    img {border-radius: 2em;}
+    img {
+        height: 500px;
+        width: 500px;
+        border-radius: 2em;
+    }
 
 }
 
