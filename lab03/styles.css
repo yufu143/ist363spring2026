@@ -19,7 +19,7 @@ nav {
 .reciperow div {
   padding: 10px;
   color: #e2625c;
-  border-radius: 2em;
+  border-radius: 1.5em;
   box-shadow: 0px 10px 4px #d3d3d3;
 }
 .reciperow div img {
@@ -27,6 +27,11 @@ nav {
   width: 250px;
 }
 
+#newsletter {
+  display: flex;
+  justify-content: center;
+  background-color: #e4fdc3;
+}
 #newsletter img {
   display: block;
   margin-left: auto;
@@ -36,4 +41,9 @@ nav {
 #newsletter input {
   border: 2px #e2625c;
   width: 5em;
+}
+
+footer {
+  background-color: #8ae2c8;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

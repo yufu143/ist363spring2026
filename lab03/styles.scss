@@ -9,7 +9,7 @@ body {
 header {
     background-color: $orange;
     padding: 20px;
-    
+
     
 }
 
@@ -25,7 +25,7 @@ nav {
     div {
     @include recipetxt;
 
-    border-radius: 2em;
+    border-radius: 1.5em;
     box-shadow:  0px 10px 4px #d3d3d3;
 
         img {
@@ -37,6 +37,9 @@ nav {
 }
 
 #newsletter {
+    display: flex;
+    justify-content: center;
+    background-color: $lime;
 
     img {
         display: block;
@@ -51,3 +54,7 @@ nav {
     }
 }
 
+footer {
+    background-color: $mint;
+    color: white;
+}
