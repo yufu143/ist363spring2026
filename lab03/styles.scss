@@ -2,6 +2,9 @@
 @import './partials/variables';
 @import './partials/mixin';
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 header {
     background-color: $orange;
@@ -15,11 +18,24 @@ nav {
 
 
 .reciperow {
-    @include reciperows;
+    @include recipepic;
 
-    img {
-        height: 250px;
-        width: 250px;
+
+    div {
+        
+        img {
+            height: 250px;
+            width: 250px;
+        }
+
+    }
+}
+
+#newsletter {
+
+    input {
+        background-color: azure;
+        border: 2px gray;
     }
 }
 
