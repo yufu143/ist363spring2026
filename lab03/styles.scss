@@ -14,7 +14,7 @@ nav {
 }
 
 
-.reciperow div {
-    @include recipebox;
+.reciperow {
+    @include reciperows;
 }
 

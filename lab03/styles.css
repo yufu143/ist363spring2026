@@ -6,10 +6,8 @@ nav {
   background-color: #e89b6a;
 }
 
-.reciperow div {
+.reciperow {
   display: flex;
-  justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
-  border-radius: 2em;
 }/*# sourceMappingURL=styles.css.map */
