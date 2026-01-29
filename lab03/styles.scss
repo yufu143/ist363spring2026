@@ -13,3 +13,7 @@ nav {
     background-color: $orange;
 }
 
+.reciperow div {
+    @include recipebox;
+}
+
