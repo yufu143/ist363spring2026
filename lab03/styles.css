@@ -10,4 +10,8 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.reciperow img {
+  height: 250px;
+  width: 250px;
 }/*# sourceMappingURL=styles.css.map */
