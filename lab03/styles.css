@@ -8,9 +8,8 @@ nav {
 
 .reciperow div {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: end;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex: 1;
   border-radius: 2em;
 }/*# sourceMappingURL=styles.css.map */
