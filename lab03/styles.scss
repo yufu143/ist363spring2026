@@ -4,15 +4,13 @@
 
 
 header {
+    display: flex;
     background-color: $orange;
     
-    a {
-        color: white;
-    }
+    
 }
 
 nav {
     background-color: $orange;
-    color: white;
 }
 
