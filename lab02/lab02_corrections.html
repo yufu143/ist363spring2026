@@ -58,12 +58,13 @@
                 animation-duration: 7s;
                 text-align: left;
                 transform-origin: 10%;
+                transition: 2s;
             }
 
             @keyframes move {
                 0% {transform: translateY(-200px);}
-                25% {transform: rotateY(180deg);}
-                50% {transform: rotateY(-180deg);}
+                50% {transform: rotateY(180deg);}
+                75% {transform: rotateY(-180deg);}
                 100% {transform: scale(2) rotateY(0);}              
             }
 
