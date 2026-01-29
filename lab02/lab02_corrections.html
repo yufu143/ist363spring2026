@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yujia Fu Lab 02 Corrections</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #e38e49;
+            }
+
+            p {font-size: 20px;}
+
+            strong {color: #e38e49;}
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                background-color: #D4EBF8;
+                border-radius: 15px;
+                border-width: 35px;
+                margin: 30px;
+                padding: 45px;
+            }
+
+            .info {
+                display: flex;
+                flex-wrap: wrap;
+                width: 75%;
+                flex-direction: column;
+                text-align: left;
+                vertical-align: middle;
+                justify-content: center;      
+            }
+
+            .images {
+                display: flex;
+                flex-wrap: wrap;                
+                width: 75%;
+                justify-content: center;      
+            }
+
+            /*  LAB 2 DIRECTIONS
+                    a.  Your name should slide down from the top of the browser window.
+                    b.  Then flip it around
+                    c.  Then make it pulse larger.
+            */
+       
+            .name {
+                /* position: relative; */
+                /* animation: move 7s linear;
+                transition: 2s; */
+                color: #0a3981;
+                animation-name: move;
+                animation-duration: 7s;
+                text-align: left;
+                transform-origin: 10%;
+            }
+
+            @keyframes move {
+                0% {transform: translateY(-200px);}
+                25% {transform: rotateY(180deg);}
+                50% {transform: rotateY(-180deg);}
+                100% {transform: scale(2) rotateY(0);}              
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="info">
+                    <h1 class="name">Yujia Fu</h1>
+                    <p>
+                        Something <strong>personal</strong> is I like to play games occasionally and would like to discover more. <strong>Professionally</strong>, for the past few summers, I have worked the front desk at a small doctor's clinic. Something <strong>peculiar</strong> about me is I don't like the taste of peas.
+                    </p>
+                </div>
+
+                <div class="images">
+                    <div class="row">
+                        <div>
+                            <img src="../lab01/kimmel.jpg" alt="Me standing in front of Kimmel Hall" height="250" width="250">
+                        </div>
+                        <div>
+                            <img src="../lab01/job.jpg" alt="Stock photo of a clinic front-desk receptionist working" height="250" width="250">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../lab01/games.jpg" alt="Banners of the video games Disco Elysium and Deltarune" height="250" width="250">
+                        </div>
+                        <div>
+                            <img src="../lab01/peas.jpg" alt="A bowl of peas" height="250" width="250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
