@@ -46,8 +46,9 @@ nav {
 }
 #newsletter input {
   border: 2px #e89b6a;
-  height: 25px;
+  height: 30px;
   width: 50%;
+  margin-right: 10px;
 }
 
 .aboutbox img {
