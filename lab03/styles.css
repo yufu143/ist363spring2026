@@ -30,9 +30,11 @@ nav {
 
 #newsletter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #e4fdc3;
   border-radius: 2em;
+  padding: 40px 20px;
 }
 #newsletter img {
   display: block;
