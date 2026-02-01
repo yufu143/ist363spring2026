@@ -8,6 +8,7 @@ body {
 
 header {
     background-color: $orange;
+    color: white;
     padding: 30px;
     text-align: center;
  
@@ -52,8 +53,8 @@ nav {
     }
     
     input {
-        border: 2px $melon;
-        width: 5em;
+        border: 2px $orange;
+        width: 50%;
     }
 }
 

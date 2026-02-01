@@ -4,6 +4,7 @@ body {
 
 header {
   background-color: #e89b6a;
+  color: white;
   padding: 30px;
   text-align: center;
 }
@@ -44,8 +45,8 @@ nav {
   width: 100px;
 }
 #newsletter input {
-  border: 2px #e2625c;
-  width: 5em;
+  border: 2px #e89b6a;
+  width: 50%;
 }
 
 .aboutbox img {
@@ -55,7 +56,7 @@ nav {
 button {
   padding: 25px;
   color: white;
-  background-color: #e2625c;
+  background-color: #e89b6a;
   border-radius: 1.5rem;
 }
 
