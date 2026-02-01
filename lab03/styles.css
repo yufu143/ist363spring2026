@@ -4,7 +4,8 @@ body {
 
 header {
   background-color: #e89b6a;
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
 }
 
 nav {
@@ -59,4 +60,9 @@ button {
 footer {
   background-color: #8ae2c8;
   color: white;
+  padding: 30px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

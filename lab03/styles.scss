@@ -21,7 +21,6 @@ nav {
 .reciperow {
     @include recipepic;
 
-
     div {
     @include recipetxt;
 
@@ -72,6 +71,7 @@ footer {
     background-color: $mint;
     color: white;
     padding: 30px;
+    text-align: center;
 
     a {
         text-decoration: none;
