@@ -8,9 +8,9 @@ body {
 
 header {
     background-color: $orange;
-    padding: 20px;
-
-    
+    padding: 30px;
+    text-align: center;
+ 
 }
 
 nav {
@@ -71,4 +71,9 @@ button {
 footer {
     background-color: $mint;
     color: white;
+    padding: 30px;
+
+    a {
+        text-decoration: none;
+    }
 }
