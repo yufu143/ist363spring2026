@@ -1,12 +1,16 @@
+footer, header {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 header {
   background-color: #e89b6a;
-  color: white;
-  padding: 30px;
-  text-align: center;
 }
 
 nav {
@@ -41,10 +45,13 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  height: 85px;
   width: 100px;
 }
-#newsletter input {
+#newsletter p {
+  text-align: center;
+}
+#newsletter #sub {
   border: 2px #e89b6a;
   height: 30px;
   width: 50%;
@@ -64,10 +71,4 @@ button {
 
 footer {
   background-color: #8ae2c8;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
-footer a {
-  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

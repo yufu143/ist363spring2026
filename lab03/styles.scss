@@ -2,15 +2,21 @@
 @import './partials/variables';
 @import './partials/mixin';
 
+%hrfr {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
+    @extend %hrfr;
+    
     background-color: $orange;
-    color: white;
-    padding: 30px;
-    text-align: center;
  
 }
 
@@ -48,11 +54,15 @@ nav {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 100px;
+        height: 85px;
         width: 100px;
     }
+
+    p {
+        text-align: center;
+    }
     
-    input {
+    #sub {
         border: 2px $orange;
         height: 30px;
         width: 50%;
@@ -73,12 +83,8 @@ button {
 }
 
 footer {
-    background-color: $mint;
-    color: white;
-    padding: 30px;
-    text-align: center;
+    @extend %hrfr;
 
-    a {
-        text-decoration: none;
-    }
+    background-color: $mint;
+
 }
