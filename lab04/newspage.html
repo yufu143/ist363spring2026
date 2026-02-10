@@ -11,12 +11,12 @@
     -->
 </head>
 <body>
-    <header class="bg-indigo-950 text-white">
-        <h1 class="text-2xl">
-            <strong><span class="text-orange-500">Orange</span> News</strong>
+    <header class="flex items-center justify-between bg-indigo-950 text-white p-4">
+        <h1 class="text-3xl font-extrabold">
+            <span class="text-amber-400">Orange</span> News
         </h1>
         <nav class="flex-row text-right">
-            <a href="">Home</a>  <a href="">Latest</a>  <a href="">Scores</a> <a href="">Video</a> <a href="">More</a>
+            <a href="" class="mr-3">Home</a>  <a href="" class="mr-3">Latest</a>  <a href="" class="mr-3">Scores</a> <a href="" class="mr-3">Video</a> <a href="">More</a>
         </nav> 
     </header>
     <main>
@@ -63,18 +63,24 @@
                     <p>Athlete Z's retirement shocked the sports world...</p>
                 </div>
             </div>
-            <div class="flex-1 rounded-lg shadow-lg ml-4">
+            <div class="flex-1">
                 <h2 class="text-xl font-semibold">
                     Game Scores
                 </h2>
-                <div class="flex flex-col justify-between p-3">
-                    <span class="font-semibold">
-                        <p>Game</p> <p>Score</p>
+                <div class="flex flex-col rounded-lg shadow-lg ml-4 p-6">
+                    <span class="flex font-semibold justify-between">
+                        <p>Game</p> <p class="mr-3">Score</p>
                     </span>
                     <hr class="border bg-black">
-                    <p>Women's Hockey vs Miami</p> <p>3 - 1</p>
-                    <p>Men's Lacrosse vs St Bonaventure</p> <p>7 - 18</p>
-                    <p>Men's Basketball vs Duke</p> <p>98 - 75</p>
+                    <span class="flex justify-between mt-2">
+                        <p>Women's Hockey vs Miami</p> <p>3 - 1</p>
+                    </span>
+                    <span class="flex justify-between mt-2">
+                        <p>Men's Lacrosse vs St Bonaventure</p> <p>7 - 18</p>
+                    </span>
+                    <span class="flex justify-between mt-2">
+                        <p>Men's Basketball vs Duke</p> <p>98 - 75</p>
+                    </span>
                 </div>
             </div>
         </div>
