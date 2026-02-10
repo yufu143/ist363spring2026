@@ -15,7 +15,7 @@
         <h1 class="text-3xl font-extrabold">
             <span class="text-amber-400">Orange</span> News
         </h1>
-        <nav class="flex-row text-right">
+        <nav class="invisible sm:visible">
             <a href="" class="mr-3">Home</a>  <a href="" class="mr-3">Latest</a>  <a href="" class="mr-3">Scores</a> <a href="" class="mr-3">Video</a> <a href="">More</a>
         </nav> 
     </header>
@@ -31,17 +31,17 @@
             <div class="flex flex-col m-10">
                 <h2 class="text-xl font-semibold">More Featured Stories</h2>
                     <div class="flex flex-col sm:flex-row sm:justify-between">
-                        <div class="rounded-lg p-4 shadow-lg">
+                        <div class="rounded-lg p-4 shadow-lg max-w-1/4">
                             <img src="./images/graduates.jpg" alt="">
                             <h3 class="text-xl font-bold mt-2 mr-3">Graduation 2025</h3>
                             <p>Invite your friends and family to join us in May.</p>
                         </div>
-                        <div class="rounded-lg p-4 shadow-lg">
+                        <div class="rounded-lg p-4 shadow-lg max-w-1/4">
                             <img src="./images/runners.jpg" alt="">
                             <h3 class="text-xl font-bold mt-2 mr-3">Workplace Run</h3>
                             <p>Run a 5k with your colleagues.</p>
                         </div>
-                        <div class="rounded-lg p-4 shadow-lg">
+                        <div class="rounded-lg p-4 shadow-lg max-w-1/4">
                             <img src="./images/artshow.jpg" alt="">
                             <h3 class="text-xl font-bold mt-2">Art Show</h3>
                             <p>The best art of the year on display at Schaffer.</p>
@@ -51,7 +51,7 @@
         </section>
         <section>
             <div class="flex flex-col sm:flex-row sm:justify-between m-10">
-                <div class="flex-1 mr-4">
+                <div class="flex-1 mr-4 mb-5">
                     <h2 class="text-xl font-semibold">Top Headlines</h2>
                     <div class="rounded-lg shadow-lg mt-3 p-3">
                         <h3 class="font-bold">Player X Breaks Record</h3>
@@ -66,7 +66,7 @@
                         <p>Athlete Z's retirement shocked the sports world...</p>
                     </div>
                 </div>
-                <div class="flex-1 ml-4">
+                <div class="flex-1 md:ml-4">
                     <h2 class="text-xl font-semibold">
                         Game Scores
                     </h2>
@@ -91,9 +91,9 @@
         <section>
             <div class="flex flex-col bg-gray-800 text-white p-8 rounded-lg m-10">
                 <h2 class="text-xl font-semibold">Subscribe to Our Newsletter</h2>
-                <p>Stay updated with the latest news, scores, and exclusive content delivered straight to your inbox!</p>
+                <p class="mt-2 mb-3">Stay updated with the latest news, scores, and exclusive content delivered straight to your inbox!</p>
                 <input type="text" placeholder="Enter your email" class="text-black rounded-l-lg p-2 w-3/5">
-                <button class="bg-yellow-400 text-black rounded-r-lg p-2 w-60">Subscribe</button>
+                <button class="bg-yellow-400 text-black rounded-r-lg p-2 w-1/5">Subscribe</button>
             </div>
         </section>    
     </main>
