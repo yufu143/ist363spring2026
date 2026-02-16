@@ -12,13 +12,18 @@
 <body>
     <!-- NOTES
         - Everything should be centered
-        - Mobile view: iPhone XR
+        - Fixed width
+        - Camera icon is navigation brand
+        - Navigation should collapse and toggle at mobile size
+            - Mobile view: iPhone XR
+        - See More Button: Mouse Over Slightly Darker
+        - Read More Button: Mouse Over Reverses Colors
         
     -->
     <header class="bg-black text-light">
-        <nav class="navbar-collapse text-decoration-none flex justify-content-end">
-        <img src="./images/logo.jpg" alt="Camera Logo" style="height: 50px; width: 50px" class="navbar navbar-expand-md">
-            <ul class="navbar-nav flex justify-content-end">
+        <nav class="text-decoration-none flex justify-content-end">
+            <img src="./images/logo.jpg" alt="Camera Logo" style="height: 50px; width: 50px" class="navbar navbar-toggler navbar-expand-md">
+            <ul class="navbar navbar-collapse flex me-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white-50" href="">About</a>
                 </li>
