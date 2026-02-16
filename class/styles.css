@@ -11978,4 +11978,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+h1, .h1, h2, .h2 {
+  color: #951c85;
 }/*# sourceMappingURL=styles.css.map */
