@@ -1,9 +1,14 @@
 // Custom variables
-$primary: #101874;
+$primary: #86bddd;
+$bg-primary: #110f8e;
 $light: #fbf5e5;
 
 // Import Bootstrap
 @import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
+
+header {
+    background-color: $bg-primary;
+}
 
 h1, h2 {
     color: $primary;
