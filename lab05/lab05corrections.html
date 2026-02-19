@@ -49,7 +49,7 @@
                 </li>
             </ul>
         </nav> -->
-        <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo_small.png" alt="Camera Logo">
@@ -61,7 +61,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">Features</a>
                         <a class="nav-link" href="#">Pricing</a>
                     </div>
@@ -69,18 +69,20 @@
             </div>
         </nav>
     </header>
-    <main class="text-center">
+    <main class="text-center container">
         <h1 class="mt-5">Portfolio</h1>
-        <section class="container">
-            <img src="./images/blue-flower.jpg" alt="" height="200" width="300">
-            <img src="./images/mountains.jpg" alt="" height="200" width="300">
-            <img src="./images/architecture.jpg" alt="" height="200" width="300">
-            <img src="./images/lake.jpg" alt="" height="200" width="300">
-            <img src="./images/clouds.jpg" alt="" height="400" width="600">
-            <img src="./images/plum.jpg" alt="" height="200" width="300">
-            <img src="./images/snow.jpg" alt="" height="200" width="300">
-            <img src="./images/blue-eryngo.jpg" alt="" height="200" width="300">
-            <img src="./images/art.jpg" alt="" height="200" width="300">
+        <section class="row align-items-start g-3 g-lg-3">
+            <div class="row col-12 col-lg-6">
+                <img class="col-12 col-lg-6" src="./images/blue-flower.jpg" alt="Blue-violet flower covered in dewdrops">
+                <img class="col-12 col-lg-6" src="./images/mountains.jpg" alt="Snowy mountain landscape">
+                <img class="col-12 col-lg-6" src="./images/architecture.jpg" alt="Brightly-lit night cityscape">
+                <img class="col-12 col-lg-6" src="./images/lake.jpg" alt="Boats on a lake surface">
+            </div>
+            <img class="col-12 col-lg-6 ml-3 mt-3" src="./images/clouds.jpg" alt="Stormy clouds">
+            <img class="col-12 col-lg-3" src="./images/plum.jpg" alt="Plums">
+            <img class="col-12 col-lg-3" src="./images/snow.jpg" alt="Mounds of snow">
+            <img class="col-12 col-lg-3" src="./images/blue-eryngo.jpg" alt="Blue eryngo flower">
+            <img class="col-12 col-lg-3" src="./images/art.jpg" alt="Blue-themed collection of art supplies">
         </section>
         <button type="button" class="btn btn-primary mt-4 mb-5" data-bs-toggle="button">See More</button>
     </main>
@@ -88,7 +90,7 @@
         <h1 class="">About the artist</h1>
         <p class="text-secondary">Capturing moments through the lens, my passion is bringing emotions to life in every
             frame.</p>
-        <button type="button" class="btn" data-bs-toggle="button">Read More</button>
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="button">Read More</button>
     </footer>
 </body>
 
