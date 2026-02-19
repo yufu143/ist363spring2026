@@ -1,13 +1,17 @@
 // Custom variables
-$primary: #86bddd;
-$bg-primary: #110f8e;
-$light: #fbf5e5;
+$primary: #13124b;
 
 // Import Bootstrap
 @import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
 
-header {
-    background-color: $bg-primary;
+header, footer {
+    background-color: $primary;
+    color: #ffffff;
+
+    .nav-link {
+        color: #ffffff;
+    }    
+
 }
 
 h1, h2 {
