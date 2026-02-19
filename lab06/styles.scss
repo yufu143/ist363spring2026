@@ -1,5 +1,6 @@
 // Custom variables
 $primary: #13124b;
+$warning: #ffcb1f;
 
 // Import Bootstrap
 @import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
@@ -12,6 +13,11 @@ header, footer {
         color: #ffffff;
     }    
 
+}
+
+
+.bi-star-fill, .bi-star {
+        color: $warning;
 }
 
 h1, h2 {

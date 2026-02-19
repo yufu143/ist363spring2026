@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="../lab05/images/logo_small.png" alt="Camera Logo">
@@ -56,45 +56,106 @@
                 <span class="sr-only">Next</span>
             </a>
         </section>
-        <section class="container">
+        <section class="container p-4" id="customerReviews">
             <div class="text-center">
-                <i class="bi bi-stars"></i><h2>Customer Reviews</h2>
+                <i class="bi bi-stars"></i>
+                <h2 class="fw-light">Customer Reviews</h2>
             </div>
             <div class="row">
                 <div class="card col-12 col-lg-4">
-                   <h4 class="card-title">Amazing Work!</h4>
-                   <p class="card-text">Absolutely stunning photography, highly recommend!</p>
-                   <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>  
+                    <h4 class="card-title">Amazing Work!</h4>
+                    <p class="card-text">Absolutely stunning photography, highly recommend!</p>
+                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i></span>
                 </div>
                 <div class="card col-12 col-lg-4">
-                   <h4 class="card-title">Beautiful Pictures</h4>
-                   <p class="card-text">Captured the moment perfectly, great experience.</p>
-                   <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+                    <h4 class="card-title">Beautiful Pictures</h4>
+                    <p class="card-text">Captured the moment perfectly, great experience.</p>
+                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
                 </div>
                 <div class="card col-12 col-lg-4">
-                   <h4 class="card-title">Fantastic Service</h4>
-                   <p class="card-text">Very professional and high-quality work.</p>
-                   <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span> 
+                    <h4 class="card-title">Fantastic Service</h4>
+                    <p class="card-text">Very professional and high-quality work.</p>
+                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i></span>
                 </div>
             </div>
         </section>
-        <!-- <section class="row g-3 g-lg-3">
-            <div class="col-lg-6 g-3 g-lg-3">
-                <div class="row g-3 g-lg-3">
-                    <img class="col-12 col-lg-6" src="../lab05/images/blue-flower.jpg"
-                        alt="Blue-violet flower covered in dewdrops">
-                    <img class="col-12 col-lg-6" src="../lab05/images/mountains.jpg" alt="Snowy mountain landscape">
-                    <img class="col-12 col-lg-6" src="../lab05/images/architecture.jpg" alt="Brightly-lit night cityscape">
-                    <img class="col-12 col-lg-6" src="../lab05/images/lake.jpg" alt="Boats on a lake surface">
+        <section class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+                <p class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What type of photography do you specialize in?
+                    </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        I specialize in portrait, wedding, and landscape photography.
+                    </div>
                 </div>
             </div>
-            <img class="col-12 col-lg-6 mt-3" src="../lab05/images/clouds.jpg" alt="Stormy clouds">
-            <img class="col-12 col-lg-3" src="../lab05/images/plum.jpg" alt="Plums">
-            <img class="col-12 col-lg-3" src="../lab05/images/snow.jpg" alt="Mounds of snow">
-            <img class="col-12 col-lg-3" src="../lab05/images/blue-eryngo.jpg" alt="Blue eryngo flower">
-            <img class="col-12 col-lg-3" src="../lab05/images/art.jpg" alt="Blue-themed collection of art supplies">
-        </section> -->
-        <button type="button" class="btn btn-primary mt-4 mb-5" data-bs-toggle="button">See More</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do you offer prints for sale?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Seasonally, every spring and winter, I have a store-wide sale. I always post about sales on my socials, but the best way to be notified is by signing up for my mailing list, which is available on my Shop page.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How can I book a session?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        The best way to book a session is by contacting me through the Get in Touch form directly underneath this FAQ. My schedule is currently fully booked until April, but if you're looking for a time after that, feel free to reach out!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you accept clients 
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <form>
+                <h2 class="fw-light">Get in Touch</h2>
+                <div class="form-group">
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </form>
+        </section>
+        <button type="button" class="btn btn-secondary mt-4 mb-5" data-bs-toggle="button">Submit</button>
     </main>
     <footer class="p-4">
         <p class=""><i class="bi bi-c-circle"></i> 2026</p>
@@ -124,6 +185,22 @@
 
             </div>
         </form> -->
+    <!-- <section class="row g-3 g-lg-3">
+            <div class="col-lg-6 g-3 g-lg-3">
+                <div class="row g-3 g-lg-3">
+                    <img class="col-12 col-lg-6" src="../lab05/images/blue-flower.jpg"
+                        alt="Blue-violet flower covered in dewdrops">
+                    <img class="col-12 col-lg-6" src="../lab05/images/mountains.jpg" alt="Snowy mountain landscape">
+                    <img class="col-12 col-lg-6" src="../lab05/images/architecture.jpg" alt="Brightly-lit night cityscape">
+                    <img class="col-12 col-lg-6" src="../lab05/images/lake.jpg" alt="Boats on a lake surface">
+                </div>
+            </div>
+            <img class="col-12 col-lg-6 mt-3" src="../lab05/images/clouds.jpg" alt="Stormy clouds">
+            <img class="col-12 col-lg-3" src="../lab05/images/plum.jpg" alt="Plums">
+            <img class="col-12 col-lg-3" src="../lab05/images/snow.jpg" alt="Mounds of snow">
+            <img class="col-12 col-lg-3" src="../lab05/images/blue-eryngo.jpg" alt="Blue eryngo flower">
+            <img class="col-12 col-lg-3" src="../lab05/images/art.jpg" alt="Blue-themed collection of art supplies">
+        </section> -->
 </body>
 
 </html>
