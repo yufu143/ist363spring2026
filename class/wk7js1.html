@@ -23,20 +23,38 @@
         }
     </script> -->
 
-    <script>
+    <!-- <script>
         function evaluateGPA() {
             let gpa = 3.4;
             if (gpa >= 3.5) {
                 console.log("You made the dean's list.");
             } else if (gpa < 3.5) {
-                console.log("You did not make the dean's list.")
+                console.log("You did not make the dean's list.");
             }
         }   
     </script>
     
     <h1>JavaScript Week 1</h1>
-    <button onclick="console.log(evaluateGPA)">
+    <button onclick="console.log(evaluateGPA())">
         GPA Check
+    </button> -->
+
+    <script>
+        
+        function evenNumbers() {   
+            const numbers = [1,2,3,4,5,6,7,8,9,10];
+            for (const number of numbers) {
+                if (number/2 == 1) {
+                    console.log(number);
+                }
+            }
+        }
+    </script>
+
+
+    <h1>JavaScript Week 1</h1>
+    <button onclick="console.log(evenNumbers())">
+        Even Numbers
     </button>
 
 </body>
