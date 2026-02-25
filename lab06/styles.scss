@@ -4,6 +4,7 @@ $warning: #ffcb1f;
 
 // Import Bootstrap
 @import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
+@import '../bootstrap-modules/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
 header, footer {
     background-color: $primary;
