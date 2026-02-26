@@ -7,67 +7,59 @@
 </head>
 <body>
 
-    <!--     
-    <script>
-      let test = 100;
-    </script>
-
     <h1>JavaScript Week 1</h1>
-    <button onclick="console.log('Test = ' + test)">Console Log Test</button>
-    -->
+     
+        <script>
+            let test = 100;
+        </script>
 
-    <!--
-    
-    <script>
-      function convertDogAgeToHuman() {
-        let name = 'Ryder';
-        let humanAge = 5;
-        console.log(name + "'s human age is = " + humanAge);
-        let dogAge = humanAge * 7;
-        console.log(name + "'s dog age is = " + dogAge);
-      }
-    </script>
+        <button onclick="console.log('Test = ' + test)">
+            Console Log Test
+        </button>
 
-    <h1>JavaScript Week 1</h1>
-    <h2>Dog Years Conversion</h2>
-    <input type="button" value="Submit" onclick="convertDogAgeToHuman()">
-    
-    -->
-
-
-    <!-- <script>
-        function evaluateGPA() {
-            let gpa = 3.4;
-            if (gpa >= 3.5) {
-                console.log("You made the dean's list.");
-            } else if (gpa < 3.5) {
-                console.log("You did not make the dean's list.");
+        <script>
+            function convertDogAgeToHuman() {
+                let name = 'Ryder';
+                let humanAge = 5;
+                console.log(name + "'s human age is = " + humanAge);
+                let dogAge = humanAge * 7;
+                console.log(name + "'s dog age is = " + dogAge);
             }
-        }   
-    </script>
-    
-    <h1>JavaScript Week 1</h1>
-    <button onclick="console.log(evaluateGPA())">
-        GPA Check
-    </button> -->
+        </script>
 
-    <script>
-        
-        function evenNumbers() {   
-            const numbers = [1,2,3,4,5,6,7,8,9,10];
-            for (const number of numbers) {
-                if (number/2 == 1) {
-                    console.log(number);
+        <h2>Dog Years Conversion</h2>
+        <input type="button" value="Submit" onclick="convertDogAgeToHuman()">
+    
+
+        <script>
+            function evaluateGPA() {
+                let gpa = 3.4;
+                if (gpa >= 3.5) {
+                    console.log("You made the dean's list.");
+                } else if (gpa < 3.5) {
+                    console.log("You did not make the dean's list.");
+                }
+            }   
+        </script>
+    
+        <button onclick="console.log(evaluateGPA())">
+            GPA Check
+        </button>
+
+        <script>   
+            function evenNumbers() {   
+                const numbers = [1,2,3,4,5,6,7,8,9,10];
+                for (const number of numbers) {
+                    if (number/2 == 1) {
+                        console.log(number);
+                    }
                 }
             }
-        }
-    </script>
+        </script>
 
-
-    <h1>JavaScript Week 1</h1>
-    <button onclick="console.log(evenNumbers())">
-        Even Numbers
-    </button>
+        <button onclick="console.log(evenNumbers())">
+            Even Numbers
+        </button>
 
 </body>
 </html>
