@@ -1,88 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 7 JS Lab</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 7 JS Lab</title>
+<style>
         body {background-color: #5c866e;}
-    </style>
+</style>
 </head>
+
 <body>
-    <h1>LAB 07 JavaScript</h1>    
-    <script>
-        // QUESTION #1 
-        /* Task - Logging Text and Variables
-
-        Set a variable called favNumber equal to your favorite number write code to console log this variable along with the text. and console log this.
-        
-        My favorite number is 5.
-        */
-
+<h1>LAB 07 JavaScript</h1>
+<script>
+        // QUESTION #1
         let favNumber = 20;
+        
         console.log("My favorite number is " + favNumber + ".");
 
-        // QUESTION #2 
-        /* Task - Working with Arrays
-        
-        Create an array named favoriteFoods that contains at least four of your favorite foods.
 
-        Print the second item in the array to the console.
-        Add a new food to the array using .push().
-        Print the entire updated array to the console.
-        */
-
+        // QUESTION #2
         let favoriteFoods = ["noodles", "strawberry cheesecake", "clams", "chicken soup", "rice"];
         console.log(favoriteFoods[1]);
-
+        
         favoriteFoods.push("dumplings");
-
+        
         console.log(favoriteFoods);
 
-        // QUESTION #3 
-        /* Task - Looping thru an Array
-        
-        Write a for loop to print out your favorite foods.  Add some text to help you give context so that the output looks like the example below.  You will need to use your skills from #1 to do this.
 
-        Favorite Food 1: pizza
-        Favorite Food 2: sushi
-        etc…
-        */
-
+        // QUESTION #3
         for (let i = 0; i < favoriteFoods.length; i++) {
-
                 console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
-
         }
 
+
         // QUESTION #4 
-        /* Task - Filtering an Array
-        
-        Copy and paste your loop from #3 into this question and rewrite it to exclude console logging the second entry. For example, my array contains pizza, sushi, chocolate, and French fries. When I console log it for this question I won’t see the sushi entry.
-        */
-
         for (let i = 0; i < favoriteFoods.length; i++) {
-
                 if (i == 1) {
                         continue;
                 }
                 console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
-        
         }
 
+
         // QUESTION #5 
-        /* Task - Creating and Using Objects
-
-        Create an object called book with the following properties:
-        •       title (a string for the book title)
-        •	author (a string for the author's name)
-        •	yearPublished (a number for the publication year)
-        •	isAvailable (a boolean indicating if the book is available)
-
-        Print the book’s title and author to the console.
-        Use an if statement to check if the book is available. If isAvailable is true, print "This book is available for checkout." Otherwise, print "Sorry, this book is currently checked out."
-        */
-
         let book = {
                 title: "Dungeon Meshi Vol. 8",
                 author: "Ryoko Kui",
@@ -100,12 +61,7 @@
         }
 
 
-        // QUESTION #6 
-        /* Task - While Loops
-        
-        Write a while loop that console logs even numbers and stops when you get to 20.
-        */
-
+        // QUESTION #6
         let x = 1;
         while (x <= 20) {
                 if (x % 2 == 0) {
@@ -115,18 +71,11 @@
         }
 
 
-        // QUESTION #7 
-        /* Task - Using a Random Number
-        
-        Write JavaScript that simulates rolling a six-sided die and returns a random number between 1 and 6.  Console log the result.
-        */
-
-        
-        
-
-    </script>
+        // QUESTION #7         
+        let randomNumber = Math.floor(Math.random() * 6) + 1;
+        console.log(randomNumber);
 
 
-
+</script>
 </body>
 </html>
