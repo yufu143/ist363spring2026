@@ -12,23 +12,25 @@
     <h1>LAB 07 JavaScript</h1>    
     <script>
         // QUESTION #1 
-        // Task - Logging Text and Variables
+        /* Task - Logging Text and Variables
 
-        // Set a variable called favNumber equal to your favorite number write code to console log this variable along with the text. and console log this.
+        Set a variable called favNumber equal to your favorite number write code to console log this variable along with the text. and console log this.
         
-        // My favorite number is 5.
+        My favorite number is 5.
+        */
 
         let favNumber = 20;
         console.log("My favorite number is " + favNumber + ".");
 
         // QUESTION #2 
-        // Task - Working with Arrays
+        /* Task - Working with Arrays
         
-        // Create an array named favoriteFoods that contains at least four of your favorite foods.
+        Create an array named favoriteFoods that contains at least four of your favorite foods.
 
-        // Print the second item in the array to the console.
-        // Add a new food to the array using .push().
-        // Print the entire updated array to the console.
+        Print the second item in the array to the console.
+        Add a new food to the array using .push().
+        Print the entire updated array to the console.
+        */
 
         let favoriteFoods = ["noodles", "strawberry cheesecake", "clams", "chicken soup", "rice"];
         console.log(favoriteFoods[1]);
@@ -38,64 +40,80 @@
         console.log(favoriteFoods);
 
         // QUESTION #3 
-        // Task - Looping thru an Array
+        /* Task - Looping thru an Array
         
-        // Write a for loop to print out your favorite foods.  Add some text to help you give context so that the output looks like the example below.  You will need to use your skills from #1 to do this.
+        Write a for loop to print out your favorite foods.  Add some text to help you give context so that the output looks like the example below.  You will need to use your skills from #1 to do this.
 
-        // Favorite Food 1: pizza
-        // Favorite Food 2: sushi
-        // etc…
+        Favorite Food 1: pizza
+        Favorite Food 2: sushi
+        etc…
+        */
 
         for (let i = 0; i < favoriteFoods.length; i++) {
 
-                console.log("Favorite Food " + (+i+1) + ": " + favoriteFoods[i]);
+                console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
 
         }
 
         // QUESTION #4 
-        // Task - Filtering an Array
+        /* Task - Filtering an Array
         
-        // Copy and paste your loop from #3 into this question and rewrite it to exclude console logging the second entry. For example, my array contains pizza, sushi, chocolate, and French fries. When I console log it for this question I won’t see the sushi entry.
+        Copy and paste your loop from #3 into this question and rewrite it to exclude console logging the second entry. For example, my array contains pizza, sushi, chocolate, and French fries. When I console log it for this question I won’t see the sushi entry.
+        */
 
-        
         for (let i = 0; i < favoriteFoods.length; i++) {
-                
-                console.log("Favorite Food " + (+i+1) + ": " + favoriteFoods[i]);
 
+                if (i == 1) {
+                        continue;
+                }
+                console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
+        
         }
 
-        
-   
-
-
-
         // QUESTION #5 
-        // Task - Creating and Using Objects
+        /* Task - Creating and Using Objects
 
-        // Create an object called book with the following properties:
-        // •   title (a string for the book title)
-        // •	author (a string for the author's name)
-        // •	yearPublished (a number for the publication year)
-        // •	isAvailable (a boolean indicating if the book is available)
+        Create an object called book with the following properties:
+        •       title (a string for the book title)
+        •	author (a string for the author's name)
+        •	yearPublished (a number for the publication year)
+        •	isAvailable (a boolean indicating if the book is available)
 
-        // Print the book’s title and author to the console.
-        // Use an if statement to check if the book is available. If isAvailable is true, print "This book is available for checkout." Otherwise, print "Sorry, this book is currently checked out."
+        Print the book’s title and author to the console.
+        Use an if statement to check if the book is available. If isAvailable is true, print "This book is available for checkout." Otherwise, print "Sorry, this book is currently checked out."
+        */
 
+        let book = {
+                title: "Dungeon Meshi Vol. 8",
+                author: "Ryoko Kui",
+                yearPublished: 2019,
+                isAvailable: true
+        };
 
+        console.log(book.title);
+        console.log(book.author);
+
+        if (book["isAvailable"] == true) {
+                console.log("This book is available for checkout.");
+        } else {
+                console.log("Sorry, this book is currently checked out.");
+        }
 
 
         // QUESTION #6 
-        // Task - While Loops
+        /* Task - While Loops
         
-        // Write a while loop that console logs even numbers and stops when you get to 20.
+        Write a while loop that console logs even numbers and stops when you get to 20.
+        */
 
 
 
 
         // QUESTION #7 
-        // Task - Using a Random Number
+        /* Task - Using a Random Number
         
-        // Write JavaScript that simulates rolling a six-sided die and returns a random number between 1 and 6.  Console log the result.
+        Write JavaScript that simulates rolling a six-sided die and returns a random number between 1 and 6.  Console log the result.
+        */
 
         
 
