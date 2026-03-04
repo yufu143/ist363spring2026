@@ -22,7 +22,12 @@
         button:hover {background: #ff8000; background-image: -webkit-linear-gradient(top, #ff8000, #ff8000); background-image: -moz-linear-gradient(top, #ff8000, #ff8000); background-image: -ms-linear-gradient(top, #ff8000, #ff8000); background-image: -o-linear-gradient(top, #ff8000, #ff8000); background-image: linear-gradient(to bottom, #ff8000, #ff8000); }        
         p { font-size: 20px;font-weight: bold;text-align: center;width: 100%;}
         .animate {animation: moveRight 1s ease-in-out;}
-        @keyframes moveRight {  }
+        @keyframes moveRight {
+
+                0% {transform: translateX(100px);}
+                100% {transform: rotate(180deg);}
+
+          }
     </style>
 </head>
 <body>
@@ -44,20 +49,34 @@
     </div>
 
         <script>
-             
+            let mshield = 100;
+            let gshield = 100;
 
+            document.getElementById("playbutton").addEventListener("click", playGame);
+
+            //let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+            
+            function playGame() {
+
+            }
+            
             function animateFireball() {
 
-            // Remove the class to reset animation
-            document.getElementById("fireballleft").classList.remove("animate");
-            document.getElementById("fireballright").classList.remove("animate");
 
-            // Use a small timeout to allow the browser to register the removal
-            setTimeout(() => {
-                document.getElementById("fireballleft").classList.add("animate");
-                document.getElementById("fireballright").classList.add("animate");
-            }, 10);  // Small delay ensures re-triggering
+                // Remove the class to reset animation
+                document.getElementById("fireballleft").classList.remove("animate");
+                document.getElementById("fireballright").classList.remove("animate");
+
+                // Use a small timeout to allow the browser to register the removal
+                setTimeout(() => {
+                    document.getElementById("fireballleft").classList.add("animate");
+                    document.getElementById("fireballright").classList.add("animate");
+                }, 10);  // Small delay ensures re-triggering
         }
+
+
+
 
         </script>
 </body>
