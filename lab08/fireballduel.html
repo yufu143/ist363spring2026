@@ -139,23 +139,26 @@
         let gShield = 100;
 
         const mShieldPower = document.getElementById("mscore")
-
         const gShieldPower = document.getElementById("gscore")
-        // girlShieldPower.innerText =
 
         document.getElementById("playbutton").addEventListener("click", playGame);
 
         function playGame() {
             animateFireball();
-            calcPower();
-
+            
             //monster
+            calcPower();
             console.log("Initial Value: " + mShield);
             mShield = mShield - randomNumber;
             console.log("New Value: " + mShield);
             mShieldPower.innerText = mShield;
 
             //girl
+            calcPower();
+            console.log("Initial Value: " + gShield);
+            gShield = gShield - randomNumber;
+            console.log("New Value: " + gShield);
+            gShieldPower.innerText = gShield;
 
             //loser
             if (mShield <= 0 && gShield <=0) {
@@ -164,7 +167,7 @@
                 document.getElementById("playbutton").style.display = "none";
                 document.getElementById("monster").src="images/boom.png";
                 document.getElementById("girl").src="images/boom.png";
-            } else if (mShield <= 0 ) { 
+            } else if (mShield <= 0) { 
                 console.log("Monster Lost");
                 gameresult.innerText = "Monster Lost";
                 document.getElementById("playbutton").style.display = "none";
@@ -192,15 +195,10 @@
         }
 
         function calcPower() {
-            return randomNumber = Math.floor(Math.random() * 100) + 1;
+            return randomNumber = Math.floor(Math.random() * 20) + 1;
             console.log(randomNumber);
         }
-
-
-
-
-
-
+        
     </script>
 </body>
 
