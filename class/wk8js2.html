@@ -55,6 +55,8 @@
             }
         </script>
     -->
+
+    <!--
     <h1>Dog Age to Dog Years Calendar</h1>
     <form>
         <p>Enter your dog's age (in human years): </p>
@@ -72,7 +74,45 @@
         let formInput = document.getElementById("dogForm").elements[0].value
         let dog_age = convertDogAgeToHuman(formInput)
     </script>
+    -->
 
+    <h1>Week 8 Participation</h1>
+
+    <h2>Dog Years Conversion</h2>
+    <form class="dogForm">
+      <label for="name">Enter Dog's Name</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <br />
+      <label for="age">Enter Dog's Age:</label>
+
+      <input type="number" id="age" name="age" min="1" max="20" />
+      <br />
+      <br />
+      <input type="button" value="Calculate Age" id="dogBtn"></button>
+    </form>
+    <p id="response-text"></p>
+
+        <script>
+
+      function convertDogAgeToHuman() {
+        let name = document.getElementsByClassName("dogForm")[0].elements[0].value;
+        console.log(name);
+        let dogAge = document.getElementsByClassName("dogForm")[0].elements[1].value;
+        console.log(dogAge);
+        let humanAge = dogAge * 7;
+        console.log(humanAge);
+
+        document.getElementById("response-text").innerHTML =
+          "In dog years, " + name + " is " + humanAge + " years old.";
+      }
+
+      const btn = document.getElementById("dogBtn");
+
+    //   Add event listener
+      btn.addEventListener("click", convertDogAgeToHuman)
+
+    </script>
 
 </body>
 </html>
