@@ -160,13 +160,20 @@
             //loser
             if (mShield <= 0 && gShield <=0) {
                 console.log("Both Lost");
+                gameresult.innerText = "Both Lost";                
+                document.getElementById("playbutton").style.display = "none";
+                document.getElementById("monster").src="images/boom.png";
+                document.getElementById("girl").src="images/boom.png";
             } else if (mShield <= 0 ) { 
                 console.log("Monster Lost");
                 gameresult.innerText = "Monster Lost";
                 document.getElementById("playbutton").style.display = "none";
-                
+                document.getElementById("monster").src="images/boom.png";
             } else if (gShield <= 0) {
                 console.log("Girl Lost");
+                gameresult.innerText = "Girl Lost";                
+                document.getElementById("playbutton").style.display = "none";
+                document.getElementById("girl").src="images/boom.png";
             }
 
         }
