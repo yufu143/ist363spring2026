@@ -148,32 +148,25 @@
             
             //monster
             calcPower();
-            console.log("Initial Value: " + mShield);
             mShield = mShield - randomNumber;
-            console.log("New Value: " + mShield);
             mShieldPower.innerText = mShield;
 
             //girl
             calcPower();
-            console.log("Initial Value: " + gShield);
             gShield = gShield - randomNumber;
-            console.log("New Value: " + gShield);
             gShieldPower.innerText = gShield;
 
-            //loser
+            //game result
             if (mShield <= 0 && gShield <=0) {
-                console.log("Both Lost");
                 gameresult.innerText = "Both Lost";                
                 document.getElementById("playbutton").style.display = "none";
                 document.getElementById("monster").src="images/boom.png";
                 document.getElementById("girl").src="images/boom.png";
             } else if (mShield <= 0) { 
-                console.log("Monster Lost");
                 gameresult.innerText = "Monster Lost";
                 document.getElementById("playbutton").style.display = "none";
                 document.getElementById("monster").src="images/boom.png";
             } else if (gShield <= 0) {
-                console.log("Girl Lost");
                 gameresult.innerText = "Girl Lost";                
                 document.getElementById("playbutton").style.display = "none";
                 document.getElementById("girl").src="images/boom.png";
@@ -196,7 +189,6 @@
 
         function calcPower() {
             return randomNumber = Math.floor(Math.random() * 20) + 1;
-            console.log(randomNumber);
         }
         
     </script>
