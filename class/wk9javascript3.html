@@ -15,9 +15,9 @@
         </script>
     -->
     
-    <!--
+    <!--  -->
     <h2>Working w/ APIs Activity</h2>
-    <body onload="getData()"></body>
+    <body onload="getData()">
     <script>
         // https://data.syr.gov/
         // Syracuse Pavement Ratings (2024)
@@ -25,8 +25,8 @@
         async function getData() {
 
             const requestOptions = {
-                method: "GET"
-
+                method: "GET",
+                redirect: "follow"
             };
         
             try {
@@ -35,29 +35,36 @@
 
                 const result = await response.text();
 
-            }
+                console.log(result)
+
+            } catch (error) {
+                console.error(error);
+            };
             
-            getData()
-        }
-
-    </script>
-    -->
-
-    <!--  -->
-    <h2>Week 9 Participation Activity</h2>
-    <script>
-        function parseData() {
-
-            const parsedData = JSON.parse("https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_s_Athletic_Courts/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json");
-
-            const parkName = parsedData.features[0].attributes["PARK"]
-            const courtType = parsedData.features[0].attributes["COURT_TYPE"]
-
+            
         }
 
         getData()
 
     </script>
+    
+
+    <!--  
+        <h2>Week 9 Participation Activity</h2>
+        <script>
+            function parseData() {
+
+                const parsedData = JSON.parse("https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_s_Athletic_Courts/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json");
+
+                const parkName = parsedData.features[0].attributes["PARK"]
+                const courtType = parsedData.features[0].attributes["COURT_TYPE"]
+
+            }
+
+            getData()
+
+        </script>
+    -->
 
 </body>
 </html>
