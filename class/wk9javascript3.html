@@ -43,7 +43,21 @@
     </script>
     -->
 
+    <!--  -->
+    <h2>Week 9 Participation Activity</h2>
+    <script>
+        function parseData() {
 
-    
+            const parsedData = JSON.parse("https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_s_Athletic_Courts/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json");
+
+            const parkName = parsedData.features[0].attributes["PARK"]
+            const courtType = parsedData.features[0].attributes["COURT_TYPE"]
+
+        }
+
+        getData()
+
+    </script>
+
 </body>
 </html>
