@@ -4,10 +4,34 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+const cardData = {
+  card1: {
+    data1: "Data Name",
+    data2: "Data Description",
+    data3: "Data Status",
+    data4: "Data Version",
+  },
+  card2: {
+    data1: "Data Name",
+    data2: "Data Description",
+    data3: "Data Status",
+    data4: "Data Version",
+  },
+  card3: {
+    data1: "Data Name",
+    data2: "Data Description",
+    data3: "Data Status",
+    data4: "Data Version",
+  }
+}
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   const myName = "Yujia Fu";
+  const schoolYear = "Senior";
+  const myMajor = "Information Management and Technology";
 
   return (
     <>
@@ -21,6 +45,15 @@ function App() {
           <h1>Get started</h1>
           <h3>Student Name</h3>
           <p>{myName}</p>
+
+          <div>
+              <ul>
+                <li>{myName}</li>
+                <li>{schoolYear}</li>
+                <li>{myMajor}</li>
+              </ul>
+          </div>
+
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -34,6 +67,10 @@ function App() {
       </section>
 
       <div className="ticks"></div>
+
+      <div>
+        {cardData}
+      </div>
 
       <section id="next-steps">
         <div id="docs">
