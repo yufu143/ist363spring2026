@@ -33,6 +33,12 @@ function App() {
   const schoolYear = "Senior";
   const myMajor = "Information Management and Technology";
 
+  const person = {
+    myName: "Yujia Fu",
+    schoolYear: "Senior",
+    myMajor: "Information Management and Technology",
+  }
+
   return (
     <>
       <section id="center">
@@ -45,12 +51,18 @@ function App() {
           <h1>Get started</h1>
           <h3>Student Name</h3>
           <p>{myName}</p>
-
           <div>
               <ul>
                 <li>{myName}</li>
                 <li>{schoolYear}</li>
                 <li>{myMajor}</li>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                <li>{person.myName}</li>
+                <li>{person.schoolYear}</li>
+                <li>{person.myMajor}</li>
               </ul>
           </div>
 
@@ -68,9 +80,7 @@ function App() {
 
       <div className="ticks"></div>
 
-      <div>
-        {cardData}
-      </div>
+
 
       <section id="next-steps">
         <div id="docs">
