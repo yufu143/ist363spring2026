@@ -1,4 +1,6 @@
 
+    
+    
     async function getData() {
 
             const requestOptions = {
@@ -11,12 +13,25 @@
 
                 const result = await response.text();
 
-                console.log(result)
+                const resultJSON = await JSON.parse(result);
+
+                console.log("Full result is: " + result)
+
+                console.log(resultJSON)
+
+                //JSON.stringify()
+                console.log("Temperature is: " + resultJSON.current.temperature_2m)
+
+                console.log("Precipitation is: " + resultJSON.current.precipitation)
+
+                console.log("Cloud cover is: " + resultJSON.current.cloud_cover)
+
+            
 
             } catch (error) {
                 console.error(error);
             };
             
-        }
+        } 
 
         getData()
