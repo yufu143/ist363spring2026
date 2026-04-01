@@ -21,16 +21,6 @@ let initialTasks = [
 function App() {
   const [count, setCount] = useState(0)
 
-  // const myName = "Yujia Fu";
-  // const schoolYear = "Senior";
-  // const myMajor = "Information Management and Technology";
-
-  // const person = {
-  //   myName: "Yujia Fu",
-  //   schoolYear: "Senior",
-  //   myMajor: "Information Management and Technology",
-  // }
-
   }
 
   return (
