@@ -41,6 +41,7 @@ function App() {
         </div>
         
             {/* <i class="fa-solid fa-circle-xmark" style="color: rgb(220, 26, 26);"></i> */}
+            {/* text-decoration: line-through */}
 
         {/* <div>
           <h1>Get started</h1>
