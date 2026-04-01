@@ -19,7 +19,7 @@ let initialTasks = [
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   
 
@@ -64,12 +64,12 @@ function App() {
           </p>
         </div> */}
 
-        <button
+        {/* <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
+        </button> */}
       </section>
 
       <div className="ticks"></div>
