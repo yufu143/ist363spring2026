@@ -1,6 +1,4 @@
-
-    
-    
+ 
     async function getData() {
 
             const requestOptions = {
