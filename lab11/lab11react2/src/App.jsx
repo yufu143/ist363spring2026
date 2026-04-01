@@ -4,48 +4,6 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-// const cardData = {
-//   card1: {
-//     data1: "Data Name",
-//     data2: "Data Description",
-//     data3: "Data Status",
-//     data4: "Data Version",
-//   },
-//   card2: {
-//     data1: "Data Name",
-//     data2: "Data Description",
-//     data3: "Data Status",
-//     data4: "Data Version",
-//   },
-//   card3: {
-//     data1: "Data Name",
-//     data2: "Data Description",
-//     data3: "Data Status",
-//     data4: "Data Version",
-//   }
-// };
-
-//  Lab 10 Question #1
-const students = [
-  {
-    suid: 123456, 
-    name: 'Sue Flay', 
-    year: 'senior', 
-    major: 'Applied Data Analytics'
-  }, 
-  {
-    suid: 234567, 
-    name: 'Ella Vader', 
-    year: 'junior', 
-    major: 'Information Management and Technology'
-  }, 
-  {
-    suid: 345678, 
-    name: 'Chris P Bacon', 
-    year: 'junior', 
-    major: 'Innovation, Society and Technology'
-  }
-];
 
 
 
@@ -62,9 +20,6 @@ function App() {
   //   schoolYear: "Senior",
   //   myMajor: "Information Management and Technology",
   // }
-
-
-
 
 
 
