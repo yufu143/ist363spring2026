@@ -5,7 +5,17 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 
-
+let initialTasks = [
+    {id: 1,
+      item: "Complete Lab 11",
+      status: "not completed"
+    },
+    
+    {id: 2,
+      item: "JSX Events & State",
+      status: "not completed"
+    }
+  ]
 
 
 function App() {
@@ -21,7 +31,7 @@ function App() {
   //   myMajor: "Information Management and Technology",
   // }
 
-
+  }
 
   return (
     <>
@@ -168,6 +178,5 @@ function App() {
       <section id="spacer"></section>
     </>
   )
-}
 
 export default App
