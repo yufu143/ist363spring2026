@@ -21,7 +21,7 @@ let initialTasks = [
 function App() {
   const [count, setCount] = useState(0)
 
-  }
+  
 
   return (
     <>
@@ -33,18 +33,8 @@ function App() {
         </div>
         
         <div>
-          <h1>Students</h1>
-          <ul>
-            {
-              students.map(function(item) {
-                return <li>
-                    <p>Name: {item.name}</p>
-                    <p>Year: {item.year}</p>
-                    <p>Major: {item.major}</p>
-                  </li>;
-              })
-            }
-          </ul>
+          <h1>To Do List</h1>
+          <p>{initialTasks}</p>
         </div>
         
         {/* <div>
@@ -168,5 +158,5 @@ function App() {
       <section id="spacer"></section>
     </>
   )
-
+}
 export default App
