@@ -19,7 +19,7 @@
 
                 console.log(resultJSON)
 
-                //JSON.stringify()
+                //JSON.stringify() for innerHTML and innerText
                 console.log("Temperature is: " + resultJSON.current.temperature_2m)
 
                 console.log("Precipitation is: " + resultJSON.current.precipitation)
