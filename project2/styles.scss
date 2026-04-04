@@ -1,4 +1,4 @@
-$success: #5b6b4e;
+$primary: #13124b;
 $warning: #ffcb1f;
 
 // Import Bootstrap
@@ -6,7 +6,7 @@ $warning: #ffcb1f;
 @import '../bootstrap-modules/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
 header, footer {
-    background-color: $success;
+    background-color: $primary;
     color: #ffffff;
 
     .nav-link {
