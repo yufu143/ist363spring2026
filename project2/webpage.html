@@ -5,11 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 02 Webpage</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-    <script src="../bootstrap-modules/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <script src="../bootstrap-modules/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="" alt="Camera Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">TV Shows</a>
+                        <a class="nav-link" href="#">Search</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <h2 id="firstShow">TV Show Name</h2>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
     <script type="module">
         // const myHeaders = new Headers();
         // myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMWU2ZWI3NWM5NmUyZjU0ZGU2ZDE4YTFhZmExMjhiNSIsIm5iZiI6MTc3NTMxNzMyMC4yNDg5OTk4LCJzdWIiOiI2OWQxMzE0OGNiZDFmMTkyNDMwYjg2OTEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.vxuFpHNCOBmm5-7lHw3xOsWJw7GumTIcIDEWnl9RUws");
@@ -44,23 +87,23 @@
             const response = await fetch("https://api.themoviedb.org/3/trending/tv/week?language=en-US", requestOptions);
             const result = await response.json();
             console.log(result);
-            let firstTitle = result.results[0].name;
-            console.log(firstTitle);
-            const firstMovie = document.getElementById("firstMovie");
-            firstMovie.innerText = firstTitle;
-            // updateMovieName();
+            // let firstTitle = result.results[0].name;
+            // console.log(firstTitle);
+            // const firstMovie = document.getElementById("firstMovie");
+            // firstMovie.innerText = firstTitle;
+            updateMovie1(result);
         } catch (error) {
             console.error(error);
         };
 
-        // function updateMovieName () {
-        //     const firstMovie = document.getElementById("firstMovie");
-        //     firstMovie.innerText = firstTitle;
-        // }
+        function updateMovie1 (result) {
+            let firstTitle = result.results[0].name;
+            console.log(firstTitle);
+            const firstShow = document.getElementById("firstShow");
+            firstShow.innerText = firstTitle;
+        }
         
     </script>
-
-    <h1 id="firstMovie">Movie Name</h1>
 
 </body>
 
