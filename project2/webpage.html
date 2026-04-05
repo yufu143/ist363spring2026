@@ -10,7 +10,7 @@
     <script src="../bootstrap-modules/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body class="bg-secondary-50">
     <header>
         <nav class="navbar navbar-expand-lg bg-success-subtle">
             <div class="container">
@@ -30,9 +30,22 @@
     </header>
 
     <main>
-
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title" id="firstShow">Card title</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div>
-            <h2 id="firstShow"></h2>
+            <h2 id="secondShow"></h2>
 
         </div>
         <div>
@@ -92,13 +105,13 @@
             console.error(error);
         };
 
-        function updateMovie1 (result) {
+        function updateMovie1(result) {
             let firstTitle = result.results[0].name;
             console.log(firstTitle);
             const firstShow = document.getElementById("firstShow");
             firstShow.innerText = firstTitle;
         }
-        
+
     </script>
 
 </body>
