@@ -26,10 +26,14 @@ function App() {
   return (
     <>
       <nav>
-        <button onClick={() => setPage('home')}>Home</button>
-        <button onClick={() => setPage('about')}>About</button>
+        <div>
+          <button onClick={() => setPage('home')}>Home</button>
+        </div>
+        <div> 
+          <button onClick={() => setPage('about')}>About</button>
+        </div> 
       </nav>
-      
+
       {page === 'home' && <Home />}
       {page === 'about' && <About />} 
     </>
