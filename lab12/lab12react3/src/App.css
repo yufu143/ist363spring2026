@@ -1,7 +1,7 @@
 nav {
   padding: 50px;
   background-color: bisque;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .counter {
