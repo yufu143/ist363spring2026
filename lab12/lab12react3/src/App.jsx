@@ -24,11 +24,12 @@ function About () {
 function App() {
   const [page, setPage] = useState('home');
   return (
-    < >
+    <>
+      <nav>
+        <button onClick={() => setPage('home')}>Home</button>
+        <button onClick={() => setPage('about')}>About</button>
+      </nav>
       
-      <button onClick={() => setPage('home')}>Home</button>
-      <button onClick={() => setPage('about')}>About</button>
-
       {page === 'home' && <Home />}
       {page === 'about' && <About />} 
     </>
