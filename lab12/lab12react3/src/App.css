@@ -1,5 +1,6 @@
 nav {
-  padding: 50px;
+  display: flex;
+  padding: 100px;
   background-color: bisque;
   justify-content: space-evenly;
 }
