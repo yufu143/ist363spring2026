@@ -13,6 +13,14 @@ function Home () {
   );
 }
 
+function About () {
+  return (
+    <div>
+      <h1>About Page</h1>
+    </div>
+  );
+}
+
 function App() {
   const [page, setPage] = useState('home');
   return (
@@ -21,8 +29,8 @@ function App() {
       <button onClick={() => setPage('home')}>Home</button>
       <button onClick={() => setPage('about')}>About</button>
 
-      {/* {page === 'home' && <Home />}
-      {page === 'about' && <About />}  */}
+      {page === 'home' && <Home />}
+      {page === 'about' && <About />} 
     </>
   );
 }
