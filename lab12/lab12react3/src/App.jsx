@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import About from './About';
+// import About from './About';
 
 function Home () {
   return (
@@ -21,8 +21,8 @@ function App() {
       <button onClick={() => setPage('home')}>Home</button>
       <button onClick={() => setPage('about')}>About</button>
 
-      {page === 'home' && <Home />}
-      {page === 'about' && <About />} 
+      {/* {page === 'home' && <Home />}
+      {page === 'about' && <About />}  */}
     </>
   );
 }
