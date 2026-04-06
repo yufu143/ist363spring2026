@@ -59,3 +59,5 @@ function updateWeather() {
                 weatherEmoji.innerText = "☀️";                
             }
 }
+
+updateWeather()
