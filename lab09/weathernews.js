@@ -43,3 +43,19 @@ async function getData() {
 }
 
 getData()
+
+const currentPrecip = document.getElementById("precip")
+const currentTemp = document.getElementById("temp")
+const weatherEmoji = document.getElementById("wx-emoji")
+
+function updateWeather() {
+
+    currentPrecip.innerText = resultJSON.current.precipitation;
+    currentTemp.innerText = resultJSON.current.temperature_2m;
+
+    if (resultJSON.current.cloud_cover >= 50) {
+                weatherEmoji.innerText = "☁️";                
+            } else { 
+                weatherEmoji.innerText = "☀️";                
+            }
+}
