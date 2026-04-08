@@ -24,7 +24,7 @@ async function getData() {
 
         console.log("Cloud cover is: " + resultJSON.current.cloud_cover)
 
-
+        updateWeather(resultJSON)
 
     } catch (error) {
         console.error(error);
@@ -44,20 +44,23 @@ async function getData() {
 
 getData()
 
-const currentPrecip = document.getElementById("precip")
-const currentTemp = document.getElementById("temp")
-const weatherEmoji = document.getElementById("wx-emoji")
 
-function updateWeather() {
+
+function updateWeather(resultJSON) {
+    const currentPrecip = document.getElementById("precip")
+    const currentTemp = document.getElementById("temp")
+    const weatherEmoji = document.getElementById("wx-emoji")
+    console.log("updateWeather ran")
 
     currentPrecip.innerText = resultJSON.current.precipitation;
     currentTemp.innerText = resultJSON.current.temperature_2m;
+    console.log("Current precip is" + currentPrecip)
 
     if (resultJSON.current.cloud_cover >= 50) {
-                weatherEmoji.innerText = "☁️";                
-            } else { 
-                weatherEmoji.innerText = "☀️";                
-            }
+        weatherEmoji.innerText = "☁️";
+    } else {
+        weatherEmoji.innerText = "☀️";
+    }
 }
 
-updateWeather()
+
