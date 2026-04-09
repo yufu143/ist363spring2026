@@ -46,17 +46,17 @@ getData()
 
 
 
-function updateWeather(resultJSON) {
+function updateWeather(data) {
     const currentPrecip = document.getElementById("precip")
     const currentTemp = document.getElementById("temp")
     const weatherEmoji = document.getElementById("wx-emoji")
     console.log("updateWeather ran")
 
-    currentPrecip.innerText = resultJSON.current.precipitation;
-    currentTemp.innerText = resultJSON.current.temperature_2m;
+    currentPrecip.innerText = data.current.precipitation;
+    currentTemp.innerText = data.current.temperature_2m;
     console.log("Current precip is" + currentPrecip)
 
-    if (resultJSON.current.cloud_cover >= 50) {
+    if (data.current.cloud_cover >= 50) {
         weatherEmoji.innerText = "☁️";
     } else {
         weatherEmoji.innerText = "☀️";
