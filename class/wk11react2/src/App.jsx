@@ -18,7 +18,16 @@ function App() {
   }
 
   const Liked = () => {
-    const [liked, setLiked] = useState('whiteheart');
+    const [liked, setLiked] = useState("🤍 Click to Like");
+  }
+
+  const handleLike = () => {
+    if (liked === "🤍 Click to Like") {
+      setLiked(false);
+    } else {
+      setLiked(true);
+    }
+    
   }
 
   return (
@@ -42,7 +51,7 @@ function App() {
       </ul>
     </div>
 
-//     <div onClick={handleLike}>
+//     <div className="clickable" onClick={handleLike}>
 //         <img src="https://picsum.photos/200" />
 //          <p>{liked}</p>
 //         </div>
