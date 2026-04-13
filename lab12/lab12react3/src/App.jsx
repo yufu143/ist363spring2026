@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Pioneer1 from './components/Pioneer1.jsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
