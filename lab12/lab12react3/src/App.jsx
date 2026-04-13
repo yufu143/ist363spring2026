@@ -6,6 +6,10 @@ import heroImg from './assets/hero.png'
 import './App.css'
 // import About from './About';
 
+const initialPioneers = [
+  {}
+];
+
 function Home () {
   return (
     <div>
