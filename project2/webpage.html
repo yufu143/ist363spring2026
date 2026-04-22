@@ -132,8 +132,18 @@
         function updateTVShow3(result) {
             let thirdTitle = result.results[2].name;
             console.log(thirdTitle);
-            const thirdShow = document.getElementById("secondShow");
-            thirdShow.innerText = thirdTitle;
+            const thirdShowTitle = document.getElementById("thirdShowTitle");
+            thirdShowTitle.innerText = thirdTitle;
+
+            let thirdPoster = result.results[2].poster_path;
+            console.log(thirdPoster);
+            const thirdShowPoster = document.getElementById("thirdShowPoster");
+            thirdShowPoster.src = imageURL + thirdPoster;
+
+            let thirdOverview = result.results[2].overview;
+            console.log(thirdOverview);
+            const thirdShowInfo = document.getElementById("thirdShowInfo");
+            thirdShowInfo.innerText = thirdOverview;
         }
 
     </script>
