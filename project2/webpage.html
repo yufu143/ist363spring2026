@@ -118,12 +118,12 @@
             const secondShowTitle = document.getElementById("secondShowTitle");
             secondShowTitle.innerText = secondTitle;
 
-            let secondPoster = result.results[0].poster_path;
+            let secondPoster = result.results[1].poster_path;
             console.log(secondPoster);
             const secondShowPoster = document.getElementById("secondShowPoster");
             secondShowPoster.src = imageURL + secondPoster;
 
-            let secondOverview = result.results[0].overview;
+            let secondOverview = result.results[1].overview;
             console.log(secondOverview);
             const secondShowInfo = document.getElementById("secondShowInfo");
             secondShowInfo.innerText = secondOverview;
