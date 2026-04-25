@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css'
 
 const students = [
   { suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics' },
@@ -32,12 +33,26 @@ function App() {
     
   }
 
-  return (
+const [name, setName] = useState("mario");
 
-    <div>
+let handleClick = () => {
+  if (name === "mario") {
+    setName("luigi");
+  } else {
+    setName("mario");
+  }
+
+  console.log(
+    "You clicked a button. The initial value of name was: " + name,
+  );
+}
+
+  return (
+    <>
+    <div>      
+      <h1>Students</h1>
       <label htmlFor="search">Search: </label>
       <input id="search" type="text" onChange={handleChange} />
-      <h1>Students</h1>
       <ul>
         {filteredStudents.map(function (item) {
           return (
@@ -53,10 +68,17 @@ function App() {
       </ul>
     </div>
 
-//     <div className="clickable" onClick={handleLike}>
-//         <img src="https://picsum.photos/200" />
-//          <p>{liked}</p>
-//         </div>
+    <div>
+      <h1>Using State</h1>
+      <button></button>
+
+    </div>
+
+{/* <div className="clickable" onClick={handleLike}>
+<img src="https://picsum.photos/200" />
+<p>{liked}</p>
+</div> */}
+</>
   );
 };
 
