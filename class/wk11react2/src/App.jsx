@@ -8,77 +8,79 @@ const students = [
 ];
 
 function App() {
-  
+
   let [filteredStudents, setFilteredStudents] = useState(students);
 
   const handleChange = (event) => {
 
     const filtered = students.filter(student =>
-        student.name.toLowerCase().includes(event.target.value.toLowerCase()));
-    
+      student.name.toLowerCase().includes(event.target.value.toLowerCase()));
+
     setFilteredStudents(filtered)
   }
 
+  
+  const [name, setName] = useState("mario");
+
+  let handleClick = () => {
+    if (name === "mario") {
+      setName("luigi");
+    } else {
+      setName("mario");
+    }
+
+    console.log(
+      "You clicked a button. The initial value of name was: " + name,
+    );
+  }
+  
+  
   const Liked = () => {
     const [liked, setLiked] = useState("🤍 Click to Like");
-    //❤️
   }
 
   const handleLike = () => {
     if (liked === "🤍 Click to Like") {
-      setLiked(false);
+      setLiked("❤️ Liked");
     } else {
-      setLiked(true);
+      setLiked("🤍 Click to Like");
     }
-    
-  }
+  };
 
-const [name, setName] = useState("mario");
-
-let handleClick = () => {
-  if (name === "mario") {
-    setName("luigi");
-  } else {
-    setName("mario");
-  }
-
-  console.log(
-    "You clicked a button. The initial value of name was: " + name,
-  );
-}
+  
 
   return (
     <>
-    <div>      
-      <h1>Students</h1>
-      <label htmlFor="search">Search: </label>
-      <input id="search" type="text" onChange={handleChange} />
-      <ul>
-        {filteredStudents.map(function (item) {
-          return (
-            <li key={item.suid}>
-              Name: {item.name}
-              <br />
-              Year: {item.year}
-              <br />
-              Major: {item.major}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+      <div>
+        <h1>Students</h1>
+        <label htmlFor="search">Search: </label>
+        <input id="search" type="text" onChange={handleChange} />
+        <ul>
+          {filteredStudents.map(function (item) {
+            return (
+              <li key={item.suid}>
+                Name: {item.name}
+                <br />
+                Year: {item.year}
+                <br />
+                Major: {item.major}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
-    <div>
-      <h1>Using State</h1>
-      <button></button>
+      <div>
+        <h1>Using State</h1>
+        <p>{name}</p>
+        <button onClick={handleClick}>Click Me!</button>
+      </div>
 
-    </div>
-
-{/* <div className="clickable" onClick={handleLike}>
-<img src="https://picsum.photos/200" />
-<p>{liked}</p>
-</div> */}
-</>
+      <div className="clickable" onClick={handleLike}>
+        <img src="https://picsum.photos/200" />
+        <p>{liked}</p>
+      </div>
+    </>
   );
 };
 
