@@ -45,8 +45,7 @@ function App() {
     } else {
       setLiked("🤍 Click to Like");
     }
-  };
-
+  }
   
 
   return (
