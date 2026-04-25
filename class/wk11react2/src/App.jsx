@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './App.css'
+// import './App.css'
 
 const students = [
   { suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics' },
@@ -17,7 +17,7 @@ function App() {
       student.name.toLowerCase().includes(event.target.value.toLowerCase()));
 
     setFilteredStudents(filtered)
-  }
+  };
 
   
   const [name, setName] = useState("mario");
@@ -35,9 +35,7 @@ function App() {
   }
   
   
-  const Liked = () => {
-    const [liked, setLiked] = useState("🤍 Click to Like");
-  }
+const [liked, setLiked] = useState("🤍 Click to Like");
 
   const handleLike = () => {
     if (liked === "🤍 Click to Like") {
@@ -45,7 +43,7 @@ function App() {
     } else {
       setLiked("🤍 Click to Like");
     }
-  }
+  };
   
 
   return (
@@ -75,9 +73,11 @@ function App() {
         <button onClick={handleClick}>Click Me!</button>
       </div>
 
-      <div className="clickable" onClick={handleLike}>
-        <img src="https://picsum.photos/200" />
-        <p>{liked}</p>
+      <div>
+        <div className="clickable" onClick={handleLike}>
+          <img src="https://picsum.photos/200" />
+          <p>{liked}</p>
+        </div>
       </div>
     </>
   );
