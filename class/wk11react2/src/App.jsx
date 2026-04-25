@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import './App.css'
+import './App.css'
 
 const students = [
   { suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics' },
