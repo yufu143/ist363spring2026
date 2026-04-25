@@ -1,5 +1,5 @@
 div h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 button {
@@ -9,7 +9,7 @@ button {
 }
 
 body div {
-  padding: 30px;
+  padding: 10px;
 }
 
 .counter {
