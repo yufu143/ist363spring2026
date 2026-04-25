@@ -6,44 +6,44 @@ import './App.css'
 
 
 let initialTasks = [
-    {id: 1,
-      item: "Complete Lab 11",
-      status: "not completed"
-    },
-    
-    {id: 2,
-      item: "JSX Events & State",
-      status: "not completed"
-    }
-  ]
+  {
+    id: 1,
+    item: "Complete Lab 11",
+    status: "not completed"
+  },
+
+  {
+    id: 2,
+    item: "JSX Events & State",
+    status: "not completed"
+  },
+];
 
 
 function App() {
   // const [count, setCount] = useState(0)
 
-  
+
 
   return (
-    <>
-      <section id="center">
-
-        <div>
-          <h1>To-Do List</h1>
-          <ul>
-            {
-              initialTasks.map(function(item) {
-                return <li>
-                    <p>{item.item}</p>
-                  </li>;
-              })
-            }
-          </ul>
-        </div>
+  <>
+    <div>
+      <h1>To-Do List</h1>
+      <ul>
+        {
+          initialTasks.map(function (item) {
+            return <li>
+              <p>{item.item}</p>
+            </li>;
+          })
+        }
+      </ul>
+    </div>
         
-            {/* <i class="fa-solid fa-circle-xmark" style="color: rgb(220, 26, 26);"></i> */}
-            {/* text-decoration: line-through */}
+    {/* <i class="fa-solid fa-circle-xmark" style="color: rgb(220, 26, 26);"></i> */ }
+    {/* text-decoration: line-through */ }
 
-        {/* <div>
+  {/* <div>
           <h1>Get started</h1>
           <h3>Student Name</h3>
           <p>{myName}</p>
@@ -67,20 +67,19 @@ function App() {
           </p>
         </div> */}
 
-        {/* <button
+  {/* <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
         </button> */}
-      </section>
 
       <div className="ticks"></div>
 
 
       <div className="ticks"></div>
       <section id="spacer"></section>
-    </>
+</>
   )
 }
-export default App
+export default App;

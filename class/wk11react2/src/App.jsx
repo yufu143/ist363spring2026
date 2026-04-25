@@ -7,18 +7,20 @@ const students = [
 ];
 
 function App() {
+  
   let [filteredStudents, setFilteredStudents] = useState(students);
 
   const handleChange = (event) => {
-    setFilteredStudents(
-      students.filter(student =>
-        student.name.toLowerCase().includes(event.target.value.toLowerCase())
-      )
-    );
+
+    const filtered = students.filter(student =>
+        student.name.toLowerCase().includes(event.target.value.toLowerCase()));
+    
+    setFilteredStudents(filtered)
   }
 
   const Liked = () => {
     const [liked, setLiked] = useState("🤍 Click to Like");
+    //❤️
   }
 
   const handleLike = () => {
