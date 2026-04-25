@@ -74,6 +74,7 @@ const [liked, setLiked] = useState("🤍 Click to Like");
       </div>
 
       <div>
+        <h1>Event Handling w/ Images</h1>
         <div className="clickable" onClick={handleLike}>
           <img src="https://picsum.photos/200" />
           <p>{liked}</p>
