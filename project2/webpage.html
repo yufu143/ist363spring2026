@@ -51,6 +51,11 @@
                     <img class="d-block w-90" src="" alt="Third slide" id="thirdShowPoster">
                     <p id="thirdShowInfo"></p>
                 </div>
+                <div class="carousel-item">
+                    <h2 id="fourthShowTitle"></h2>
+                    <img class="d-block w-90" src="" alt="Fourth slide" id="fourthShowPoster">
+                    <p id="fourthShowInfo"></p>
+                </div>
 
 
             </div>
@@ -90,7 +95,8 @@
             console.log(result);
             updateTVShow1(result);
             updateTVShow2(result);
-            updateTVShow3(result);            
+            updateTVShow3(result);
+            updateTVShow4(result);            
         } catch (error) {
             console.error(error);
         };
@@ -143,7 +149,24 @@
             let thirdOverview = result.results[2].overview;
             console.log(thirdOverview);
             const thirdShowInfo = document.getElementById("thirdShowInfo");
-            thirdShowInfo.innerText = thirdOverview
+            thirdShowInfo.innerText = thirdOverview;
+        }
+
+        function updateTVShow4(result) {
+            let fourthTitle = result.results[3].name;
+            console.log(fourthTitle);
+            const fourthShowTitle = document.getElementById("fourthShowTitle");
+            fourthShowTitle.innerText = fourthTitle;
+
+            let fourthPoster = result.results[3].poster_path;
+            console.log(fourthPoster);
+            const fourthShowPoster = document.getElementById("fourthShowPoster");
+            fourthShowPoster.src = imageURL + fourthPoster;
+
+            let fourthOverview = result.results[3].overview;
+            console.log(fourthOverview);
+            const fourthShowInfo = document.getElementById("fourthShowInfo");
+            fourthShowInfo.innerText = fourthOverview;
         }
 
     </script>
