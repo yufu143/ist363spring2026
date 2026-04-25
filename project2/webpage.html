@@ -56,6 +56,11 @@
                     <img class="d-block w-90" src="" alt="Fourth slide" id="fourthShowPoster">
                     <p id="fourthShowInfo"></p>
                 </div>
+                <div class="carousel-item">
+                    <h2 id="fifthShowTitle"></h2>
+                    <img class="d-block w-90" src="" alt="Fifth slide" id="fifthShowPoster">
+                    <p id="fifthShowInfo"></p>
+                </div>
 
 
             </div>
@@ -96,7 +101,8 @@
             updateTVShow1(result);
             updateTVShow2(result);
             updateTVShow3(result);
-            updateTVShow4(result);            
+            updateTVShow4(result);
+            updateTVShow5(result);                        
         } catch (error) {
             console.error(error);
         };
@@ -169,6 +175,22 @@
             fourthShowInfo.innerText = fourthOverview;
         }
 
+        function updateTVShow5(result) {
+            let fifthTitle = result.results[4].name;
+            console.log(fifthTitle);
+            const fifthShowTitle = document.getElementById("fifthShowTitle");
+            fifthShowTitle.innerText = fifthTitle;
+
+            let fifthPoster = result.results[4].poster_path;
+            console.log(fifthPoster);
+            const fifthShowPoster = document.getElementById("fifthShowPoster");
+            fifthShowPoster.src = imageURL + fifthPoster;
+
+            let fifthOverview = result.results[4].overview;
+            console.log(fifthOverview);
+            const fifthShowInfo = document.getElementById("fifthShowInfo");
+            fifthShowInfo.innerText = fifthOverview;
+        }
     </script>
 
 </body>
