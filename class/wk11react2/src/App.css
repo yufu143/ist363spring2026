@@ -3,9 +3,10 @@ div h1 {
 }
 
 button {
-  font-size: 25px;
-  padding: 20px 50px;
+  font-size: 15px;
+  padding: 10px 20px;
   background-color: #55c49f;
+  border-radius: 2rem;
 }
 
 body div {
