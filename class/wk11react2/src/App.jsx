@@ -19,7 +19,7 @@ function App() {
     setFilteredStudents(filtered)
   };
 
-  
+
   const [name, setName] = useState("mario");
 
   let handleClick = () => {
@@ -33,9 +33,9 @@ function App() {
       "You clicked a button. The initial value of name was: " + name,
     );
   }
-  
-  
-const [liked, setLiked] = useState("🤍 Click to Like");
+
+
+  const [liked, setLiked] = useState("🤍 Click to Like");
 
   const handleLike = () => {
     if (liked === "🤍 Click to Like") {
@@ -44,7 +44,7 @@ const [liked, setLiked] = useState("🤍 Click to Like");
       setLiked("🤍 Click to Like");
     }
   };
-  
+
 
   return (
     <>
